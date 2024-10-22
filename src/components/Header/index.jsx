@@ -9,7 +9,7 @@ import RouterLinks from '../RouterLinks';
 import styles from './Header.module.scss';
 
 const Header = ({ children }) => {
-    const [background, setBackground] = useState('bg-transparent');
+    const [background, setBackground] = useState('bg-[#fff]');
     const [isMobileSidebar, setIsMobileSidebar] = useState(false);
     const [isMobileLogin, setIsMobileLogin] = useState(false);
     
@@ -23,7 +23,7 @@ const Header = ({ children }) => {
             if (window.scrollY > 60) {
                 setBackground('bg-[#a6ddf7]');
             } else {
-                setBackground('bg-transparent');
+                setBackground('bg-[#fff]');
             }
         };
 
